@@ -5,4 +5,7 @@ curl --create-dirs "https://wonder.cdc.gov/wonder/sci_data/datasets/zipctyA.zip"
 unzip "zipctys/zipctyA.zip" -d zipctys
 unzip "zipctys/zipctyB.zip" -d zipctys
 
+rm "zipctys/zipctyA.zip"
+rm "zipctys/zipctyB.zip"
+
 (echo '1794315,s/  /GA'; echo 'w')|ed -s "zipctys/zipcty4"
